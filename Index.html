@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildEx</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="#home">Головна</a></li>
+      <li><a href="#about">Про нас</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#booking">Бронювання</a></li>
+    </ul>
+  </nav>
+
+  <header class="header" id="home">
+    <div class="header-content">
+      <img src="Логотип_BuildEx_Delivery-removebg-preview.png" alt="Логотип" class="logo" />
+      <h1 class="slogan">Надійна доставка для великих справ!</h1>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-info">
+        <h2>Про нас</h2>
+        <p>BuildExpress — це сучасна компанія, що надає послуги доставки будівельних матеріалів і виконує ремонтно-будівельні роботи будь-якої складності.</p>
+
+        <p>Наша компанія поєднує оперативну доставку, високий рівень сервісу та професійний підхід до кожного замовлення.</p>
+        
+        <p>У BuildExpress ви можете замовити доставку піску, щебеню, землі та інших матеріалів, а також скористатися послугами нашої команди.</p>
+        
+        <p>Ми гарантуємо своєчасне виконання замовлень, дотримання термінів та вигідні умови співпраці.</p>
+        
+        <p>BuildExpress розташований у зручному місці Житомира, що дозволяє швидко обслуговувати як приватних клієнтів, так і бізнес-замовлення.</p>
+        
+        <p>Обираючи BuildExpress, ви отримуєте надійного партнера для доставки, перевезення матеріалів та комплексних будівельних послуг.</p>
+        
+      </div>
+      
+  
+      <div class="media-block" style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="map-container" style="flex: 1 1 45%; min-width: 300px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40988.69346853173!2d28.10986855!3d50.052702499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c48946ca473a7%3A0x94fae62ce684105d!2z0KfRg9C00L3RltCyLCDQltC40YLQvtC80LjRgNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAxMzIwMA!5e0!3m2!1suk!2sua!4v1757071360303!5m2!1suk!2sua"
+            width="100%"
+            height="250"
+            style="border:0; border-radius:8px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+  
+        <div class="video-container" style="flex: 1 1 45%; min-width: 300px;">
+          <iframe
+            width="100%"
+            height="250"
+            src="https://www.youtube.com/embed/byoPzP3101M?si=RQHuMXp_JWJMajUt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="border-radius:8px;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="gallery" id="gallery">
+    <h2>Наша техніка</h2>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScU1O5PRuGGQ7Ga9NH4-pWZrwZgC4Su-aSzA&s" alt="Камаз">
+        <p>Камаз</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://tehnolider.in.ua/img/gallery/img_155_b.jpg" alt="Кран автомобільний">
+        <p>Кран</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://ireland.apollo.olxcdn.com/v1/files/81vriko9poek2-UA/image;s=1600x1200" alt="Грейдер">
+        <p>Грейдер</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://ireland.apollo.olxcdn.com/v1/files/w50wcxecukwv2-UA/image;s=1020x768" alt="Ман">
+        <p>Ман</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImdsbiDDTyAzhusiaA1ftBIpd1E-KtQq6Fg&s" alt="Ескаватор-погрузчик">
+        <p>Ескаватор-погрузчик</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://cbt-v.com.ua/files/photos/10_s.png" alt="Ескаватор">
+        <p>Ескаватор</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <h2>Забронювати техніку</h2>
+    <form onsubmit="return Result(event)">
+      <input type="text" id="name" placeholder="Ім'я *" required autocomplete="off" />
+      <input type="email" id="mail" placeholder="Email *" required />
+      <!-- <input type="password" placeholder="Пароль" /> -->
+      <input type="date" id="time" placeholder="Дата заїзду" />
+      <select required>
+        <option value="" id="Vehicle">Оберіть техніку *</option>
+        <option>Камаз</option>
+        <option>Кран</option>
+        <option>Грейдер</option>
+        <option>Ман</option>
+        <option>Ескаватор-погрузчик</option>
+        <option>Ескаватор</option>
+      </select>
+      <textarea placeholder="Побажання" spellcheck="false"></textarea>
+      <label><input type="checkbox" required /> Погоджуюсь з умовами</label>
+      <label><input type="radio" name="pay" /> Оплата готівкою</label>
+      <label><input type="radio" name="pay" /> Онлайн-оплата</label>
+      <button type="submit">Забронювати</button>
+    </form>
+  </section>
+<div id="thankyou-modal" class="modal">
+  <div class="modal-content">
+    <h2>Ваше замовлення #1495 прийнято!</h2>
+    <p>Наш менеджер обов'язково зв'яжеться з вами найближчим часом для уточнення деталей.</p>
+    <p>Дякуємо за інтерес до нашої компанії.</p>
+    <button onclick="closeModal()">Продовжити</button>
+  </div>
+</div>
+
+  <script src="Osavul.js"></script>
+</body>
+</html>
